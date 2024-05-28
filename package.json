@@ -1,0 +1,41 @@
+{
+  "name": "accessibility-linter",
+  "displayName": "Accessibility Linter",
+  "description": "A VSCode extension for checking web accessibility issues.",
+  "version": "1.0.0",
+  "publisher": "yourpublisherid",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [
+    "onCommand:accessibility-linter.checkAccessibility"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "accessibility-linter.checkAccessibility",
+        "title": "Check Accessibility"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run test-compile && node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vscode-test": "^1.0.0",
+    "eslint": "^7.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "puppeteer": "^5.3.1",
+    "@axe-core/puppeteer": "^4.1.1"
+  }
+}
