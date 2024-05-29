@@ -18,10 +18,12 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/)
+- [VS Code][https://code.visualstudio.com/]
 - [npm](https://npmjs.com/)
 ```bash
 npm install npm@latest -g
 ```
+- **OpenAI API Key:** You must provide your own API key from OpenAI to use this extension. The API key is used to access OpenAI services for generating feedback based on the GPT model. Set the API key in your environment variables or directly in the application's configuration file as OPENAI_API_KEY.
 
 ## Installation
 1. Clone the repo
