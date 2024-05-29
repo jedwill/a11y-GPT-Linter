@@ -13,7 +13,7 @@
   "activationEvents": [
     "onCommand:accessibility-linter.checkAccessibility"
   ],
-  "main": "./src/extension.js",
+  "main": "./extension.js",
   "contributes": {
     "commands": [
       {
